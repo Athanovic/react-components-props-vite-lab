@@ -2,14 +2,14 @@ import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import ArticleList from "./components/ArticleList";
-import { blogInfo, articles } from "./data/blog";
+import blogData from "./data/blog";
 
 function App() {
   return (
-    <div>
-      <Header name={blogInfo.name} />
-      <About image={blogInfo.image} about={blogInfo.about} />
-      <ArticleList posts={articles} />
+    <div className="App">
+      <Header name={blogData.name} />
+      <About image={blogData.image} about={blogData.about} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
