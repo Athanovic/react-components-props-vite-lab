@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
-import About from "./components/About";
-import ArticleList from "./components/ArticleList";
+import Header from "./Header";
+import About from "./About";
+import ArticleList from "./ArticleList";
 import { blogInfo, articles } from "./blog";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header name={blogInfo.name} />
       <About image={blogInfo.image} about={blogInfo.about} />
-      <ArticleList articles={articles} />
+      <ArticleList posts={articles} />
     </div>
   );
 }
