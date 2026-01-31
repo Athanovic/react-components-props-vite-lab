@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import About from "./About";
-import ArticleList from "./ArticleList";
-import { blogInfo, articles } from "./blog";
+import Header from "./components/Header";
+import About from "./components/About";
+import ArticleList from "./components/ArticleList";
+import { blogInfo, articles } from "./data/blog";
 
 function App() {
   return (
